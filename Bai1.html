@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>Nhap do C</label>
+<input id="input" type="text">
+<button onclick="change()">Switch</button>
+<h3 id="ketQua"></h3>
+<script>
+    function change() {
+        let c = document.getElementById('input').value;
+        switch (c) {
+            case '':
+                document.getElementById('ketQua').innerHTML = 'HAY NHAP GIA TRI'
+                break
+            default:
+                let f = (9 * c + 160) / 5;
+                document.getElementById('ketQua').innerHTML = 'Do F la: ' + f
+        }
+    }
+</script>
+</body>
+</html>

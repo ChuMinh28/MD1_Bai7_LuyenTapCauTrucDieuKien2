@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>ax + b = 0</h2>
+<label>Nhap a</label>
+<input id="nhapA" type="text">
+<label>Nhap b</label>
+<input id="nhapB" type="text">
+<button onclick="ketQua()">Click Here</button>
+<h3 id="result"></h3>
+<script>
+    function ketQua() {
+        let a = +document.getElementById('nhapA').value;
+        let b = +document.getElementById('nhapB').value;
+        let x
+        if(a === 0){
+            x = -b;
+            document.getElementById('result').innerHTML = 'x=' +x
+        }else if(isNaN){
+            document.getElementById('result').innerHTML = 'NHAP LAI DI'
+        }else if(a < 0){
+            x = b/a;
+            document.getElementById('result').innerHTML = 'x=' +x
+        }else{
+            x = -b/a;
+            document.getElementById('result').innerHTML = 'x=:' +x
+        }
+    }
+</script>
+</body>
+</html>
